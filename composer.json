@@ -1,0 +1,17 @@
+{
+    "name": "carlos/contabancaria-php",
+    "description": "Estudo sobre orientação a objetos em linguagem de programação Php.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jcarlossc",
+            "email": "josecscosta@fac.pe.senac.br"
+        }
+    ],
+    "require": {}
+}
