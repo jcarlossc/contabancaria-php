@@ -11,4 +11,5 @@ class Usuario {
     public function getNome() {
         return $this->nome;
     }
+
 }
