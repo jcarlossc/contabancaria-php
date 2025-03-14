@@ -1,7 +1,7 @@
 <?php
 namespace App\usuario;
 
-class Usuario {
+abstract class Usuario {
     protected string $nome;
 
     public function __construct(string $nome) {
@@ -11,5 +11,7 @@ class Usuario {
     public function getNome() {
         return $this->nome;
     }
+
+    abstract public function getTipoUsuario();
 
 }

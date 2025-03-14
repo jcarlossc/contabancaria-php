@@ -22,6 +22,6 @@ class PessoaJuridica extends Usuario {
     }
     
     public function getTipoUsuario() {
-        return $this->cnpj;
+        return $this->tipoUsuario;
     }
 }
