@@ -7,12 +7,12 @@ use App\conta\ContaCorrente;
 use App\conta\ContaPoupanca;
 use App\extrato\Extrato;
 
-$pessoaFisica1 = new PessoaFisica("carlos", "12345678989");
+$pessoaFisica1 = new PessoaFisica("Carlos da Costa", "12345678989");
 $contaCorrente1 = new ContaCorrente($pessoaFisica1); 
 $contaCorrente1->depositar(5000.00);
 $contaCorrente1->sacar(1440.00);
 
-$pessoaJuridica1 = new PessoaJuridica("jose", "12345678989123");
+$pessoaJuridica1 = new PessoaJuridica("Jose Carlos", "12345678989123");
 $contaCorrente2 = new ContaCorrente($pessoaJuridica1); 
 $contaCorrente2->depositar(4400.00);
 $contaCorrente2->sacar(1000.00);
