@@ -4,6 +4,9 @@ namespace App\transacao;
 /**
  * A classe Saque é responsável por
  * criar uma instância da transação saque.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class Saque extends Transacao {
 

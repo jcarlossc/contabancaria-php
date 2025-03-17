@@ -4,6 +4,9 @@ namespace App\usuario;
 /**
  * A classe Pessoa Jurídica é responsável por 
  * criar uma instância de Pessoa Jurídica no sistema.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class PessoaJuridica extends Usuario {
 

@@ -12,6 +12,9 @@ use Exception;
  * A classe Conta Corrente é responsável por
  * criar uma instância de conta corrente e efetuar
  * as operações de depositar, sacar e transferir.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class ContaCorrente extends ContaBancaria {
 

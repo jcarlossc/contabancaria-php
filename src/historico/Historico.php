@@ -8,6 +8,9 @@ use DateTime;
 /**
  * A classe Histórico é responsável por
  * criar um históricos das transações.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class Historico {
 

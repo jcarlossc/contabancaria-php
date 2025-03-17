@@ -8,6 +8,9 @@ use App\conta\ContaBancaria;
  * A classe Extrato é responsável por
  * imprimir as informações e transações
  * dos clientes.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class Extrato {
 

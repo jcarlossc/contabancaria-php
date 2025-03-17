@@ -5,6 +5,9 @@ namespace App\usuario;
  * A classe abstrata Usuário é responsável por
  * centralizar as operações das classes Pessoa
  * Física e Pessoa Jurídica.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 abstract class Usuario {
     /**

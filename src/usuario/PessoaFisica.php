@@ -4,6 +4,9 @@ namespace App\usuario;
 /**
  * A classe Pessoa Física é responsável por 
  * criar uma instância de Pessoa Física no sistema.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class PessoaFisica extends Usuario {
 

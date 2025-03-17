@@ -12,6 +12,9 @@ use Exception;
  * A classe Conta Poupança é responsável por
  * criar uma instância de conta poupança e efetuar
  * as operações de depositar, sacar e transferir.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class ContaPoupanca extends ContaBancaria {
 
@@ -19,7 +22,6 @@ class ContaPoupanca extends ContaBancaria {
 
     private string $tipoConta;
 
-    
     /**
      * O método construtor é responsável por
      * inicializar os atributos da classe.
@@ -31,7 +33,6 @@ class ContaPoupanca extends ContaBancaria {
         $this->tipoConta = "Conta Poupança";
     }
 
-    
     /**
      * Méodo que realiza a operação de depósio e
      * instancia a transaçõa Depósito.

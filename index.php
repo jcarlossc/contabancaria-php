@@ -7,6 +7,7 @@ use App\conta\ContaCorrente;
 use App\conta\ContaPoupanca;
 use App\extrato\Extrato;
 
+
 $pessoaFisica1 = new PessoaFisica("Carlos da Costa", "12345678989");
 $contaCorrente1 = new ContaCorrente($pessoaFisica1); 
 $contaCorrente1->depositar(5000.00);
@@ -39,3 +40,6 @@ $extrato3 = new Extrato();
 $extrato3->getExtrato($contaPoupanca1);
 $extrato4 = new Extrato();
 $extrato4->getExtrato($contaPoupanca2);
+
+
+

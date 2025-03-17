@@ -8,6 +8,9 @@ use App\historico\Historico;
  * A classe abstrata Conta Bancária é responsável
  * por centralizar as operações das classes Conta Corrente e
  * Conta Poupança.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 abstract class ContaBancaria {
 

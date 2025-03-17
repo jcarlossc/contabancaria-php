@@ -5,6 +5,9 @@ namespace App\transacao;
  * A classe Transação é responsável por
  * centralizar as operações das classes Depósito,
  * Saque e Transferência.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class Transacao {
 

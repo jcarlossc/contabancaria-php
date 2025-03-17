@@ -7,6 +7,9 @@ use DateTimeZone;
 /**
  * A classe Calendário é responsável por 
  * gerar data e hora para o sistema.
+ * 
+ * @author Carlos da Costa
+ * @version 1.0
  */
 class Calendario {
     /**
