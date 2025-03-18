@@ -6,37 +6,37 @@ O sistema também conta com a classe histórico que instancia o tipo de transaç
 também conta com as classes logger e extrato.
 
 ## ESTRUTURA DO PROJETO:
-/
-|-- src/
-|   |-- conta
-|   |   |-- ContaBancaria.php
-|   |   |-- ContaCorrente.php
-|   |   |-- ContaPoupanca.php
-|   |-- datahora
-|   |   |-- DataHora.php
-|   |-- extrato
-|   |   |-- Extrato.php
-|   |-- historico
-|   |   |-- Historico.php
-|   |-- log
-|   |   |-- Logger.php
-|   |-- transacao
-|   |   |-- Deposito.php
-|   |   |-- Saque.php
-|   |   |-- Transacao.php
-|   |   |-- Transferencia.php
-|   |-- usuario
-|   |   |-- PessoaFisica.php
-|   |   |-- PessoaJuridica.php
-|   |   |-- Usuario.php
-|-- tests
-|-- vendor
-|-- .gitignore
-|-- App.log
-|-- composer.json  
-|-- composer.lock
-|-- index.php
-|-- README.md
+/ <br />
+|-- src/ <br />
+|   |-- conta <br />
+|   |   |-- ContaBancaria.php <br />
+|   |   |-- ContaCorrente.php <br />
+|   |   |-- ContaPoupanca.php <br />
+|   |-- datahora <br />
+|   |   |-- DataHora.php <br />
+|   |-- extrato <br />
+|   |   |-- Extrato.php <br />
+|   |-- historico <br />
+|   |   |-- Historico.php <br />
+|   |-- log <br />
+|   |   |-- Logger.php <br />
+|   |-- transacao <br />
+|   |   |-- Deposito.php <br />
+|   |   |-- Saque.php <br />
+|   |   |-- Transacao.php <br />
+|   |   |-- Transferencia.php <br />
+|   |-- usuario <br />
+|   |   |-- PessoaFisica.php <br />
+|   |   |-- PessoaJuridica.php <br />
+|   |   |-- Usuario.php <br />
+|-- tests <br />
+|-- vendor <br />
+|-- .gitignore <br />
+|-- App.log <br />
+|-- composer.json  <br />
+|-- composer.lock <br />
+|-- index.php <br />
+|-- README.md <br />
 
 ## FERRAMENTAS UTILIZADAS:
 * Linguagem de programação PHP.
