@@ -1,48 +1,52 @@
 <?php
 namespace App\log;
 
-use App\calendario\Calendario;
+use App\datahora\DataHora;
 
 /**
- * A classe Logger é responsável por 
+ * A classe Logger é responsável por
  * criar logs do sistema.
- * 
+ *
  * @author Carlos da Costa
  * @version 1.0
  */
-class Logger {
+class Logger
+{
     /**
      * @var [type]
      */
-    private $logFile;
+    private $arquivoLog;
+
 
     /**
-     * @var Calendario
+     * @var DataHora
      */
-    private Calendario $dataHora;
+    private DataHora $dataHora;
 
     /**
-     * O método construtor é responsável por 
+     * O método construtor é responsável por
      * inicializar os atributos.
-     * 
-     * @param string $file
+     *
+     * @param string $arquivo
      */
-    public function __construct($file = "app.log") {
-        $this->logFile = $file;
-        $this->dataHora = new Calendario();
+    public function __construct($arquivo = "app.log")
+    {
+        $this->arquivoLog = $arquivo;
+        $this->dataHora = new DataHora();
     }
 
     /**
      * Método responsável pela configuração
      * do log.
-     * 
-     * @param mixed $message
-     * @param string $level
+     *
+     * @param mixed $mensagem
+     * @param string $nivel
      */
-    public function addLog($message, $level = "INFO") {
+    public function addLog($mensagem, $nivel = "INFO")
+    {
         $data = $this->dataHora->getData();
         $hora = $this->dataHora->getHora();
-        $logMessage = "[$data $hora] [$level] - $message" . PHP_EOL;
-        file_put_contents($this->logFile, $logMessage, FILE_APPEND);
+        $logMessage = "[$data $hora] [$nivel] - $mensagem" . PHP_EOL;
+        file_put_contents($this->arquivoLog, $logMessage, FILE_APPEND);
     }
 }

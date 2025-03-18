@@ -2,43 +2,46 @@
 namespace App\historico;
 
 use App\transacao\Transacao;
-use App\calendario\Calendario;
+use App\datahora\DataHora;
 use DateTime;
 
 /**
  * A classe Histórico é responsável por
  * criar um históricos das transações.
- * 
+ *
  * @author Carlos da Costa
  * @version 1.0
  */
-class Historico {
+class Historico
+{
 
     /**
      * @var array
      */
     private array $transacoes;
     /**
-     * @var Calendario
+     * @var DataHora
      */
-    private Calendario $dataHora;
+    private DataHora $dataHora;
 
     /**
      * O método construtor é responsável por
      * inicializar os atributos da classe.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->transacoes = [];
-        $this->dataHora = new Calendario();
+        $this->dataHora = new DataHora();
     }
 
     /**
      * Método responsável por adicionar
      * as transações.
-     * 
+     *
      * @param Transacao $transacao
      */
-    public function addTransacao(Transacao $transacao) {
+    public function addTransacao(Transacao $transacao)
+    {
         $transacoesArray = [
             "VALOR DA TRANSAÇÂO" => "R$ " . number_format($transacao->getValor(), 2, ",", "."),
             "TIPO DE TRANSAÇÃO" => $transacao->getTipo(),
@@ -51,7 +54,8 @@ class Historico {
     /**
      * @return array transacoes
      */
-    public function getTransacoes() {
+    public function getTransacoes()
+    {
         return $this->transacoes;
     }
 }

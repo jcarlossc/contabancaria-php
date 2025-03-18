@@ -2,13 +2,14 @@
 namespace App\usuario;
 
 /**
- * A classe Pessoa Física é responsável por 
+ * A classe Pessoa Física é responsável por
  * criar uma instância de Pessoa Física no sistema.
- * 
+ *
  * @author Carlos da Costa
  * @version 1.0
  */
-class PessoaFisica extends Usuario {
+class PessoaFisica extends Usuario
+{
 
     /**
      * @var string
@@ -23,11 +24,12 @@ class PessoaFisica extends Usuario {
     /**
      * O método construtor é responsável por
      * inicializar os atributos da classe.
-     * 
+     *
      * @param string $nome
      * @param string $cpf
      */
-    public function __construct(string $nome, string $cpf) {
+    public function __construct(string $nome, string $cpf)
+    {
         parent::__construct($nome);
         $this->cpf = $cpf;
         $this->tipoUsuario = "Pessoa Física";
@@ -35,28 +37,31 @@ class PessoaFisica extends Usuario {
 
     /**
      * Método que acessa o nome da pessoa Física.
-     * 
+     *
      * @return string nome
      */
-    public function getNome() {
+    public function getNome()
+    {
         return $this->nome;
     }
 
     /**
      * Método que acessa o cpf da pessoa Física.
-     * 
+     *
      * @return string cpf
      */
-    public function getCpf() {
+    public function getCpf()
+    {
         return $this->cpf;
     }
     
     /**
      * Método que acessa o tipo de usuário.
-     * 
+     *
      * @return string tipo de usuário.
      */
-    public function getTipoUsuario() {
+    public function getTipoUsuario()
+    {
         return $this->tipoUsuario;
     }
 }

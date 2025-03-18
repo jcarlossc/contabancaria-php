@@ -2,13 +2,14 @@
 namespace App\usuario;
 
 /**
- * A classe Pessoa Jurídica é responsável por 
+ * A classe Pessoa Jurídica é responsável por
  * criar uma instância de Pessoa Jurídica no sistema.
- * 
+ *
  * @author Carlos da Costa
  * @version 1.0
  */
-class PessoaJuridica extends Usuario {
+class PessoaJuridica extends Usuario
+{
 
     /**
      * @var string
@@ -23,11 +24,12 @@ class PessoaJuridica extends Usuario {
     /**
      * O método construtor é responsável por
      * inicializar os atributos da classe.
-     * 
+     *
      * @param string $nome
      * @param string $cnpj
      */
-    public function __construct(string $nome, string $cnpj) {
+    public function __construct(string $nome, string $cnpj)
+    {
         parent::__construct($nome);
         $this->cnpj = $cnpj;
         $this->tipoUsuario = "Pessoa Jurídica";
@@ -35,28 +37,31 @@ class PessoaJuridica extends Usuario {
 
     /**
      * Método que acessa o nome da pessoa Jurídica.
-     * 
+     *
      * @return string nome
      */
-    public function getNome() {
+    public function getNome()
+    {
         return $this->nome;
     }
 
     /**
      * Método que acessa o cnpj da Pessoa Física.
-     * 
+     *
      * @return string cnpj
      */
-    public function getCnpj() {
+    public function getCnpj()
+    {
         return $this->cnpj;
     }
     
     /**
      * Método que acessa o tipo de usuário.
-     * 
+     *
      * @return string tipo de usuário.
      */
-    public function getTipoUsuario() {
+    public function getTipoUsuario()
+    {
         return $this->tipoUsuario;
     }
 }
