@@ -1,27 +1,67 @@
 <?php
 namespace App\usuario;
 
-class PessoaJuridica extends Usuario {
+/**
+ * A classe Pessoa Jurídica é responsável por
+ * criar uma instância de Pessoa Jurídica no sistema.
+ *
+ * @author Carlos da Costa
+ * @version 1.0
+ */
+class PessoaJuridica extends Usuario
+{
 
+    /**
+     * @var string
+     */
     private string $cnpj;
 
+    /**
+     * @var string
+     */
     private string $tipoUsuario;
 
-    public function __construct(string $nome, string $cnpj) {
+    /**
+     * O método construtor é responsável por
+     * inicializar os atributos da classe.
+     *
+     * @param string $nome
+     * @param string $cnpj
+     */
+    public function __construct(string $nome, string $cnpj)
+    {
         parent::__construct($nome);
         $this->cnpj = $cnpj;
         $this->tipoUsuario = "Pessoa Jurídica";
     }
 
-    public function getNome() {
+    /**
+     * Método que acessa o nome da pessoa Jurídica.
+     *
+     * @return string nome
+     */
+    public function getNome()
+    {
         return $this->nome;
     }
 
-    public function getCnpj() {
+    /**
+     * Método que acessa o cnpj da Pessoa Física.
+     *
+     * @return string cnpj
+     */
+    public function getCnpj()
+    {
         return $this->cnpj;
     }
     
-    public function getTipoUsuario() {
-        return $this->cnpj;
+    /**
+     * Método que acessa o tipo de usuário.
+     *
+     * @return string tipo de usuário.
+     */
+    public function getTipoUsuario()
+    {
+        return $this->tipoUsuario;
     }
 }
