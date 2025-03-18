@@ -8,9 +8,9 @@ também conta com as classes logger e extrato.
 ## ESTRUTURA DO PROJETO:
 / <br />
 |-- src/ <br />
-|     |-- conta <br />
-|     |   |-- ContaBancaria.php <br />
-|     |   |-- ContaCorrente.php <br />
+|   |-- conta <br />
+|   |   |-- ContaBancaria.php <br />
+|   |   |-- ContaCorrente.php <br />
 |   |   |-- ContaPoupanca.php <br />
 |   |-- datahora <br />
 |   |   |-- DataHora.php <br />
