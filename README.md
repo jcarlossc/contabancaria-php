@@ -48,7 +48,7 @@ também conta com as classes logger e extrato.
 
 ## MODO DE UTILIZAR:
 * Instalar o gerenciador de dependências do Php: Composer. Link: https://getcomposer.org/download/
-* Clonar o repositório para o diretório 'C:\xampp\htdocs\', que é o diretório padrão da instalação. No meu caso 'C:\xampp\htdocs\projetos\', porque prefiro criar um diretório dentro de 'htdocs\'. 
+* Clonar o repositório para o diretório 'C:\xampp\htdocs\', que é o diretório padrão do Xampp. No meu caso 'C:\xampp\htdocs\projetos\', porque prefiro criar um diretório dentro de 'htdocs\'. 
 * Entrar no diretório do projeto: ```cd contabancaria-php```.
 * Na raiz do projeto executar o comando ```composer install``` para instalar os arquivos do diretório 'vendor' e as dependências. Caso precise, ```composer update``` para atualizar as dependências.
 * Instalar/executar Stack XAMPP: acessar a raiz da Stack e executar o arquivo ```xampp-control.exe```, após isso, inicializar o servidor Apache. Também é possível usar os servidores Nginx, Wamp ou, no caso do sistema operacional 
